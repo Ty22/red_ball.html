@@ -1,0 +1,19 @@
+hello world
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type= "text/javascript">
+            function sayhello(){
+                alert(hi there);
+            }
+        </script>
+            </head>
+        <body>
+        <img src="http://lrn.icstars.org/redball.jpg/>
+            <button onclick="alert("Hi")">hello world</button>
+            
+
+    </body>
+</html>

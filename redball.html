@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
+        <script type= "text/javascript">
+        //say hello screen//
+            function sayhello(){
+                alert("hi there");
+            }
+            //move redball right//
+            function moveright(){
+                redball.left= redball.left +10;
+            }
+            //move redball left//
+            function moveleft(){
+                redball.left= redball.left -10;
+        
+            }
+            //move redball up// 
+            function moveup(){
+                redball.top= redball.top -10;
+            }
+            //move redball down//
+            function movedown(){
+                redball.top= redball.top +10;
+            }
+            //move redball down right//
+            function movedownright(){
+                movedown();
+                moveright();
+            }
+            //move redball down left//
+            function movedownleft(){
+                movedown();
+                moveleft();
+            } 
+            //move redball upright//
+            function moveupright(){
+                moveup();
+                moveright();
+            }
+            //move redball upleft//
+            function moveupleft(){
+                moveup();
+                moveleft();
+            }
+            //redball goes in a square// 
+            function movessquare(){
+                //slide to the right//
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                //slide down//
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                //slide left//
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                //slide up//
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+            }
+            
+         function moveoctagon(){
+            //slide to the right//
+            moveright();
+            moveright();
+            moveright();
+            moveright();
+            moveright();
+            moveright();
+            moveright();
+            //slide right-slide down//
+            movedownright();
+            movedownright();
+            movedownright();
+            movedownright();
+            movedownright();
+            movedownright();
+            movedownright();
+            //slide down//
+            movedown();
+            movedown();
+            movedown();
+            movedown();
+            movedown();
+            movedown();
+            movedown();
+            //slide left-slide down//
+            movedownleft();
+            movedownleft();
+            movedownleft();
+            movedownleft();
+            movedownleft();
+            movedownleft();
+            movedownleft();
+            //slide to the left//
+            moveleft();
+            moveleft();
+            moveleft();
+            moveleft();
+            moveleft();
+            moveleft();
+            moveleft();
+            //slide up to the left//
+            moveupleft();
+            moveupleft();
+            moveupleft();
+            moveupleft();
+            moveupleft();
+            moveupleft();
+            moveupleft();
+            //slide up//
+            moveup();
+            moveup();
+            moveup();
+            moveup();
+            moveup();
+            moveup();
+            moveup();
+            //slide up right to finish octagon rotation//
+            moveupright();
+            moveupright();
+            moveupright();
+            moveupright();
+            moveupright();
+            moveupright();
+            moveupright();
+             }     
+            function movetriangle(){
+            //move triangle downright to start animation//
+            movedownright();
+            movedownright();
+            movedownright();
+            movedownright();
+            movedownright();
+            movedownright();
+            //slide left//
+            moveleft();
+            moveleft();
+            moveleft();
+            moveleft();
+            moveleft();
+            //complete animation of sliding upright//
+            moveupright();
+            moveupright();
+            moveupright();
+            moveupright();
+            moveupright();
+            moveupright();
+            
+            }
+        </script>
+            </head>
+        <body>
+             <img Id="redball" src="http://lrn.icstars.org/redball.jpg"></img>   
+            <button onclick="sayhello()">Hello World</button>
+            <button onclick="moveright()">move right</button> 
+            <button onclick="moveleft()">move left</button>
+            <button onclick="moveup()">move up</button>
+            <button onclick="movedown()">move down</button>
+            <button onclick="movedownright()">move downright</button>
+            <button onclick="movedownleft()">move downleft</button>
+            <button onclick="movessquare()">move in square</button>
+            <button onclick="moveupright()">move up right</button>
+            <button onclick="moveupleft()">move up left</button>
+            <button onclick="moveoctagon()"> move in octagon</button>
+            <button onclick="movetriangle()">move in triangle</button>
+    </body>         
+</html>
